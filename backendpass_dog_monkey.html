@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Screen</title>
+    <link rel="icon" href="https://github.com/iMacWeirdo/iMacWeirdo.github.io/blob/main/Resources/JERRY/CUP.png?raw=true" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://github.com/iMacWeirdo/iMacWeirdo.github.io/blob/main/Resources/JERRY/BACKGROUND.png?raw=true');
+            background-size: cover;
+            background-position: center;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        header {
+            background-color: rgba(46, 44, 44, 0.8);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        .panel {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ff0000; /* Red for emphasis */
+        }
+        #backButton {
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: rgba(180, 180, 180, 0.8);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #backButton:hover {
+            background-color: rgba(160, 160, 160, 0.8);
+        }
+        footer {
+            background-color: rgba(46, 44, 44, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Error</h1>
+</header>
+
+<div class="panel">
+    <h1>HAVE YOU TRIED PRESSING THE BANNANA BUTTON????</h1>
+    <button id="backButton" onclick="window.history.back()">Back</button>
+</div>
+
+<footer>
+    <p>Site made and updated by Wyatt Kraai</p>
+</footer>
+
+</body>
+</html>
